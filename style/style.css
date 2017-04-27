@@ -432,7 +432,51 @@ h1 {
 }
 @media (max-width: 632px) {
   .mapa {
-      width: 450px;
-      height: 300px;
- }
+      width: 100%;
+      margin-top: 20%;
+  }
+}
+
+
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px 53px;
+}
+
+.copy {
+  font-size: 20px;
+  color: white;
+}
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.sociales a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (min-width:768px) { 
+  .sociales {
+    width: auto;
+  }
+  
+  footer .contenedor {
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width:1024px) {
+  .contenedor {
+    width: 1000px;
+  }
 }
