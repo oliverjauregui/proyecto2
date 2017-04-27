@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo2</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Suez+One:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ramabhadra:400' rel='stylesheet' type='text/css'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">Oliver Jauregui</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="hamburguesa" for="menu-bar"><i class="fa fa-bars" style="font-size:30px;" aria-hidden="true" ></i></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="contactanos.html">Contactanos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="container" class="container">
+            <ul id="scene" class="scene">
+                <li class="layer" data-depth="1.00"><img src="images/layer1.png"></li>
+                <li class="layer" data-depth="0.80"><img src="images/layer2.png"></li>
+                <li class="layer" data-depth="0.60"><img src="images/layer3.png"></li>
+                <li class="layer" data-depth="0.40"><img src="images/layer4.png"></li>
+                <li class="layer" data-depth="0.20"><img src="images/layer5.png"></li>
+                <li class="layer" data-depth="0.00"><img src="images/layer6.png"></li>
+            </ul>
+        </div>
+            <div class="texto1">
+                <h1>Esta es mi pagina web</h1>
+                <p>Hecha con HTML, CSS y Javascript<br><br>
+                    Mas informacion:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:30px; margin-left: -70px; color:white;" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/oliverjauregui"><i class="fa fa-github" style="font-size:30px; color: white;" aria-hidden="true"></i></a></li>
+                    <li><a href="https://plus.google.com/collections/featured?hl=es"><i class="fa fa-google-plus-square" style="font-size:30px; margin-left: 45px; color: white;" aria-hidden="true"></i>
+</a></li>
+                </ul>
+            </div>
+    </main>
+    <footer>
+        
+    </footer>
+        
+        <script type="text/javascript" src="script.js"></script>
+        <script>
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene);
+            </script>
+</body>
+</html>
